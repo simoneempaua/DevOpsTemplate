@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PreventCaseFromMovingIfEstimateRequired</fullName>
+    <active>true</active>
+    <description>Updated to allow change in status to Awaiting reply or Closed.  Cases prevent from moving In Progress or past, if Estimation is required, but not approved.</description>
+    <errorConditionFormula>( ISPICKVAL(Status , "In Progress") ||
+ISPICKVAL(Status , "Testing")) &amp;&amp;
+ISCHANGED(Status) &amp;&amp;
+ISPICKVAL(Estimation_Required__c, "Yes") &amp;&amp;
+NOT( ISPICKVAL ( Estimation_Status__c,"Approved"))</errorConditionFormula>
+    <errorDisplayField>Estimation_Status__c</errorDisplayField>
+    <errorMessage>Please check if the Estimation Status is Approved before working on this Case.</errorMessage>
+</ValidationRule>

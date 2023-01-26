@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsReverseChargeAuto__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF
+(
+BillingCountry != 'Germany' 
+&amp;&amp;
+OR(
+BillingCountry = 'Austria',
+BillingCountry = 'Belgium',
+BillingCountry = 'Bulgaria',
+BillingCountry = 'Croatia',
+BillingCountry = 'Cyprus',
+BillingCountry = 'Czechia',
+BillingCountry = 'Denmark',
+BillingCountry = 'Estonia',
+BillingCountry = 'Finland',
+BillingCountry = 'France',
+BillingCountry = 'Greece',
+BillingCountry = 'Hungary',
+BillingCountry = 'Ireland',
+BillingCountry = 'Italy',
+BillingCountry = 'Latvia',
+BillingCountry = 'Lithuania',
+BillingCountry = 'Luxembourg',
+BillingCountry = 'Malta',
+BillingCountry = 'Netherlands',
+BillingCountry = 'Poland',
+BillingCountry = 'Portugal',
+BillingCountry = 'Romania',
+BillingCountry = 'Slovakia',
+BillingCountry = 'Slovenia',
+BillingCountry = 'Spain',
+BillingCountry = 'Sweden'),
+TRUE,
+FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>If the Billing Country of the Account is within the EU, but not within Germany, this is automatically set to TRUE and Reverse Charge information is displayed on the billing PDFs.</inlineHelpText>
+    <label>Reverse Charge?</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

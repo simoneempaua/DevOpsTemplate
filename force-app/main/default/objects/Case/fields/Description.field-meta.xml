@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Description</fullName>
+    <inlineHelpText>Description: Please add as much information as possible including: Expected Outcome; Actual Outcome; URL of affected record (if applicable)</inlineHelpText>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+</CustomField>

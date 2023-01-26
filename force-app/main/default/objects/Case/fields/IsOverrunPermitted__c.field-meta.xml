@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsOverrunPermitted__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If a case is logged when there are fewer than 4 hours remaining on the Monthly allowance, request permission to proceed over hours.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If the Monthly Allowance is low, May we run over the Monthly Allowance to work on this case?</inlineHelpText>
+    <label>Is Overrun Permitted</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

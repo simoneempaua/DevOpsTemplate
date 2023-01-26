@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Maintenance %28Customer%29</fullName>
+    <description>Maintenance Case process for customer projects</description>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Awaiting Reply</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed - Contract</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed - No Response</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>In Progress</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>On Hold</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Open</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>Review</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Testing</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

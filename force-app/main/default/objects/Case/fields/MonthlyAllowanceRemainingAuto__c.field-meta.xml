@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MonthlyAllowanceRemainingAuto__c</fullName>
+    <description>Displays the value from related Taskray Project related to this case</description>
+    <externalId>false</externalId>
+    <formula>TaskRay_Project__r.Monthly_Allowance_RemainingAuto__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Hours remaining "this month" in the related project's monthly allowance</inlineHelpText>
+    <label>Monthly Allowance Remaining Auto</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

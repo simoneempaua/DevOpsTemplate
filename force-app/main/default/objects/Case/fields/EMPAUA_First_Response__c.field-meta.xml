@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EMPAUA_First_Response__c</fullName>
+    <description>To better understand internal SLAs on cases.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>First EMPAUA response to client, autopopulated.</inlineHelpText>
+    <label>EMPAUA First Response</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

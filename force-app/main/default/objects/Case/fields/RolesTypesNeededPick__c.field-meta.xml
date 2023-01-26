@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RolesTypesNeededPick__c</fullName>
+    <description>Select all the role types needed to process this case. Internal only</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select all the role types needed to process this case</inlineHelpText>
+    <label>Roles Types Needed</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BA</fullName>
+                <default>false</default>
+                <label>BA</label>
+            </value>
+            <value>
+                <fullName>Dev</fullName>
+                <default>false</default>
+                <label>Dev</label>
+            </value>
+            <value>
+                <fullName>MC</fullName>
+                <default>false</default>
+                <label>MC</label>
+            </value>
+            <value>
+                <fullName>Pardot</fullName>
+                <default>false</default>
+                <label>Pardot</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

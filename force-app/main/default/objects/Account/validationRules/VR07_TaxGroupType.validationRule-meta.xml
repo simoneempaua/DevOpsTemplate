@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR07_TaxGroupType</fullName>
+    <active>true</active>
+    <description>For Business Accounts, you need to put a Tax Group of Type "Sales" or "Sales &amp; Purchase" [VR07].</description>
+    <errorConditionFormula>$User.IsBypassVR__c = FALSE
+&amp;&amp;
+NOT(ISBLANK(TaxGroupRef__c ))
+&amp;&amp;
+RecordType.DeveloperName = 'BusinessAccount'
+&amp;&amp;
+ISPICKVAL(TaxGroupRef__r.AcctSeed__Tax_Type__c,"Purchase")</errorConditionFormula>
+    <errorDisplayField>TaxGroupRef__c</errorDisplayField>
+    <errorMessage>For Business Accounts, you need to put a Tax Group of Type "Sales" or "Sales &amp; Purchase" [VR07].</errorMessage>
+</ValidationRule>

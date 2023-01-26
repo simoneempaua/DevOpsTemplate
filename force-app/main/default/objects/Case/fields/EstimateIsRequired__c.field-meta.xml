@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EstimateIsRequired__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Should the request should be estimate?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If this checked, the customer want to have an estimate of hours for this case.</inlineHelpText>
+    <label>Estimate Required</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>
