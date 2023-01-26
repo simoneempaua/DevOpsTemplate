@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SoWExpiryDate__c</fullName>
+    <description>Date of the SoW Expiry, if specified with customer. Not (!) used in Conga.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Date of the SoW Expiry, if specified with customer. Not (!) used in Conga.</inlineHelpText>
+    <label>SoW Expiry Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

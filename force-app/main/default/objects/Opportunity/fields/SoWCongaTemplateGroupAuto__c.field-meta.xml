@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SoWCongaTemplateGroupAuto__c</fullName>
+    <description>Sets the Conga Template Category for SoW Templates based on EMPAUA Entity.</description>
+    <externalId>false</externalId>
+    <formula>CASE( DeliveringEntityRef__r.CompanyNameExternal__c ,
+'EMPAUA Ltd.','UK',
+'EMPAUA GmbH','DE',
+'EMPAUA GmbH (CH)','CH',
+''
+)
+&amp;" "&amp;
+CASE( ProjectType__c ,
+'Maintenance','Managed Service',
+'Managed Services','Managed Service',
+''
+)
+&amp;" "&amp;
+CASE( SoWLanguage__c  ,
+'German','German',
+'English','English',
+'English'
+)</formula>
+    <inlineHelpText>Sets the Conga Template Category for SoW Templates based on EMPAUA Entity.</inlineHelpText>
+    <label>SoW Conga Template Group</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SoWDocusignEmailBodyAuto__c</fullName>
+    <description>Email body used on Docusign as default.</description>
+    <externalId>false</externalId>
+    <formula>CASE(SoWLanguage__c ,
+'English',"I am sending you this request for your electronic signature, please review and electronically sign by following the link above.",
+'German',"Unterlagen erfordern Ihre Signatur. Bitte sehen Sie die Unterlagen ein und signieren Sie sie elektronisch anhand des obenstehenden Links.",
+"I am sending you this request for your electronic signature, please review and electronically sign by following the link above."
+)</formula>
+    <inlineHelpText>Email body used on Docusign as default.</inlineHelpText>
+    <label>SoW Docusign Email Body</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

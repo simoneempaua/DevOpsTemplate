@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SumQuantityOppProductAuto__c</fullName>
+    <description>summing up hours for Opportunity Products</description>
+    <externalId>false</externalId>
+    <label>Sum Quantity Opp Product</label>
+    <summarizedField>OpportunityLineItem.Quantity</summarizedField>
+    <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

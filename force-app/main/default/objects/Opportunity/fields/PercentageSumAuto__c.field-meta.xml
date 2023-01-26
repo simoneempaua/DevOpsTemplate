@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PercentageSumAuto__c</fullName>
+    <description>Used in Validation Rule.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Rolls up field Budget Percentage from Milestone Object. Opportunity can only be closed if this a 100%. It might be over 100% if e.g. a T&amp;M is extended and now new Opportunity is closed for this, but the Baseline Hours get increased on the extist. project.</inlineHelpText>
+    <label>Percentage Sum</label>
+    <summarizedField>Milestone__c.BudgetPercentage__c</summarizedField>
+    <summaryForeignKey>Milestone__c.OpportunityRef__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

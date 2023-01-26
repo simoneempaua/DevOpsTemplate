@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR05_OnlyOneOppItemForManagedServices</fullName>
+    <active>true</active>
+    <description>If you are selling a Maintenance/Managed Services, please make sure that only One Opportunity Item is on the Opportunity [VR05].</description>
+    <errorConditionFormula>$User.IsBypassVR__c = FALSE &amp;&amp;
+CountOpportunityProductsAuto__c != 1 &amp;&amp;
+ISPICKVAL(ProjectType__c , 'Maintenance') &amp;&amp;
+ISPICKVAL(StageName, 'Closed Won') &amp;&amp;
+ISCHANGED(StageName)</errorConditionFormula>
+    <errorMessage>If you are selling a Maintenance/Managed Services, please make sure that only One Opportunity Item is on the Opportunity [VR05].</errorMessage>
+</ValidationRule>

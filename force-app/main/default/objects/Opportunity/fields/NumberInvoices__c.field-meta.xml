@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NumberInvoices__c</fullName>
+    <description>Will define in MILESTONES_APEX how many invoices will be inserted. User enters value on LWC INSERT_MILESTONES_LWC for ProjectType__c = 'Time &amp; Materials', 'Managed Services' or 'Maintenance' .</description>
+    <externalId>false</externalId>
+    <inlineHelpText>States how many invoices will be generated out of the milestones. Per Milestone one invoice is generated. Must be filled for project type "Time &amp; Materials", "Managed Services" and "Maintenance".</inlineHelpText>
+    <label>Number Invoices</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

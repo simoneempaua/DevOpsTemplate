@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CustomerSignerSoWRef__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Required for sending an SoW - should be the authorized signer of an SoW.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Required for sending an SoW - should be the authorized signer of an SoW.</inlineHelpText>
+    <label>Customer Signer SoW</label>
+    <lookupFilter>
+        <active>false</active>
+        <errorMessage>The Conntact needs to belong to the same Account as the Opportunity</errorMessage>
+        <filterItems>
+            <field>Contact.AccountId</field>
+            <operation>equals</operation>
+            <valueField>$Source.AccountId</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Contract Signer for</relationshipLabel>
+    <relationshipName>ContractSignerfor</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

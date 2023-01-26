@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NoticeDate__c</fullName>
+    <description>If empty, MILESTONES_APEX will generate monthly invoices with the hours defined in MonthlyAllowance__c.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If an ongoing MS has been terminated by the client, please enter the Notice Date here so no additional invoices are sent to the client. The Notice Date can only be Last day of the month.</inlineHelpText>
+    <label>Notice Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Joiner_Project_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>New Joiner Project Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <label>Not Applicable</label>
+            </value>
+            <value>
+                <fullName>Potential/Needs Matching</fullName>
+                <default>false</default>
+                <label>Potential/Needs Matching</label>
+            </value>
+            <value>
+                <fullName>New Joiner Placed</fullName>
+                <default>false</default>
+                <label>New Joiner Placed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LastStageChange__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>When was the Last Stage Change. This field will be filled by creation and updated for every stage change.</inlineHelpText>
+    <label>Last Stage Change</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

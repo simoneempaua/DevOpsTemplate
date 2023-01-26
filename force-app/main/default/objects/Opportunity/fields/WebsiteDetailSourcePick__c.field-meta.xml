@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WebsiteDetailSourcePick__c</fullName>
+    <description>Which type of contact form was filled out?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Which type of contact form was filled out?</inlineHelpText>
+    <label>Website Detail Source</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Contact Page</fullName>
+                <default>false</default>
+                <label>Contact Page</label>
+            </value>
+            <value>
+                <fullName>Book a Demo</fullName>
+                <default>false</default>
+                <label>Book a Demo</label>
+            </value>
+            <value>
+                <fullName>Book a Workshop</fullName>
+                <default>false</default>
+                <label>Book a Workshop</label>
+            </value>
+            <value>
+                <fullName>Health Check</fullName>
+                <default>false</default>
+                <label>Health Check</label>
+            </value>
+            <value>
+                <fullName>Managed Services</fullName>
+                <default>false</default>
+                <label>Managed Services</label>
+            </value>
+            <value>
+                <fullName>Whitepaper</fullName>
+                <default>false</default>
+                <label>Whitepaper</label>
+            </value>
+            <value>
+                <fullName>Event Landingpage</fullName>
+                <default>false</default>
+                <label>Event Landingpage</label>
+            </value>
+            <value>
+                <fullName>Cheat Sheet</fullName>
+                <default>false</default>
+                <label>Cheat Sheet</label>
+            </value>
+            <value>
+                <fullName>Pardot</fullName>
+                <default>false</default>
+                <label>Pardot</label>
+            </value>
+            <value>
+                <fullName>Accounting Seed</fullName>
+                <default>false</default>
+                <label>Accounting Seed</label>
+            </value>
+            <value>
+                <fullName>Digital Transformation</fullName>
+                <default>false</default>
+                <label>Digital Transformation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

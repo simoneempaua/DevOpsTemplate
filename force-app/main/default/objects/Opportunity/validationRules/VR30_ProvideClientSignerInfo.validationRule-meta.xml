@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR30_ProvideClientSignerInfo</fullName>
+    <active>true</active>
+    <description>Requires user to populate the client signer info before proceeding to stage 5.</description>
+    <errorConditionFormula>$User.IsBypassVR__c = FALSE &amp;&amp;
+ISCHANGED(StageName) &amp;&amp;
+ISPICKVAL(StageName,'5 - Negotiation/Review') &amp;&amp;
+ISBLANK(CustomerSignerSoWRef__c)</errorConditionFormula>
+    <errorDisplayField>CustomerSignerSoWRef__c</errorDisplayField>
+    <errorMessage>Please provide who will be signing from the client's side.[VR30]</errorMessage>
+</ValidationRule>

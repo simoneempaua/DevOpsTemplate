@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SoWNameCongaAuto__c</fullName>
+    <description>Field for Conga file naming.</description>
+    <externalId>false</externalId>
+    <formula>CASE(SoWLanguage__c ,
+'English',OpportunityNumberAuto__c&amp;" - Contract for "&amp; Account.Name &amp;" - "&amp; SoWVersion__c,
+'German',OpportunityNumberAuto__c&amp;" - Vertrag für "&amp; Account.Name &amp;" - "&amp; SoWVersion__c,
+OpportunityNumberAuto__c&amp;" - Contract for "&amp; Account.Name &amp;" - "&amp; SoWVersion__c
+)</formula>
+    <label>SoW Name Conga</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR21_WorkshopDateRequired</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+$User.IsBypassVR__c = false, 
+ISBLANK( WorkshopDate__c ), 
+ISCHANGED(StageName), 
+RecordType.Name = 'Project', 
+OR( 
+ISPICKVAL( StageName , '2 - Workshop Closed'), 
+ISPICKVAL( StageName , '3 - Cost Analysis'), 
+ISPICKVAL( StageName , '4 - Proposal/Price Quote'), 
+ISPICKVAL( StageName , '5 - Negotiation/Review'), 
+ISPICKVAL( StageName , 'Closed Won') 
+) 
+)</errorConditionFormula>
+    <errorDisplayField>WorkshopDate__c</errorDisplayField>
+    <errorMessage>Please fill in a Workshop Date when you change the stage to "2 - Workshop Closed" or beyond. [VR21]</errorMessage>
+</ValidationRule>

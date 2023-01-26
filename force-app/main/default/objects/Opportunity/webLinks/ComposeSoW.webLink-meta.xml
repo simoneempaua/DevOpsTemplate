@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ComposeSoW</fullName>
+    <availability>online</availability>
+    <description>Conga Composer &amp; Docusign for SoW Creation.</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>660</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Compose SoW</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>/apex/APXTConga4__Conga_Composer
+?id={!Opportunity.Id}
+&amp;QueryID=a0A0800001LQkCwEAL
+&amp;pv1={!Opportunity.Id}
+&amp;OFN={!Opportunity.SoWNameCongaAuto__c}
+&amp;ContactId={!Opportunity.CustomerSignerSoWIDAuto__c}
+&amp;TemplateGroup={!Opportunity.SoWCongaTemplateGroupAuto__c}
+&amp;DocuSignVisible=1
+&amp;DocuSignR1Id={!Opportunity.CustomerSignerSoWIDAuto__c}
+&amp;DocuSignR1Type=Signer
+&amp;DocusignR1Role=Signer+1
+&amp;DocuSignR1RoutingOrder=1
+&amp;DocuSignR2Id={!Opportunity.EMPAUASignerSoWIDAuto__c}
+&amp;DocuSignR2Type=Signer
+&amp;DocusignR2Role=Signer+2
+&amp;DocuSignR2RoutingOrder=2
+&amp;DocuSignEmailSubject={!Opportunity.SoWDocusignEmailSubjectAuto__c}
+&amp;DocuSignEmailBody={!Opportunity.SoWDocusignEmailBodyAuto__c}
+&amp;DocuSignSendReminders=1
+&amp;DocuSignRemindIn=2
+&amp;DocuSignRemindAgainIn=2
+&amp;DocuSignExpireIn=14
+&amp;DocuSignWarnIn=1
+&amp;_DS7=2
+&amp;DefaultPDF=1
+&amp;SC0=1
+&amp;SC1=SalesforceFile
+&amp;AC0=1
+&amp;UF0=1</url>
+    <width>900</width>
+</WebLink>

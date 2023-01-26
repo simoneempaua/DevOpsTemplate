@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LeadSourceAdditionalInfo__c</fullName>
+    <description>A shorthand description, detailing the specific source of the Lead (i.e. Dreamforce 2014 Leads, 'Contact Us' Web Form, etc.).</description>
+    <externalId>false</externalId>
+    <label>Lead Source Additional Info</label>
+    <length>100</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

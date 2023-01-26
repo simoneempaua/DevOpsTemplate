@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InvoiceContactRef__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Primary recipient of opportunity / project related invoices. Used by Finance.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Primary recipient of opportunity / project related invoices. Used by Finance.</inlineHelpText>
+    <label>Invoice Contact</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>The invoice contact must belong to the Opportunity Account.</errorMessage>
+        <filterItems>
+            <field>$Source.AccountId</field>
+            <operation>equals</operation>
+            <valueField>Contact.AccountId</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Opportunities (Invoice Contact)</relationshipLabel>
+    <relationshipName>Opportunities1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

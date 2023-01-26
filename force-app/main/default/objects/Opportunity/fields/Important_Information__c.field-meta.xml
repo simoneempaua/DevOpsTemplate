@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Important_Information__c</fullName>
+    <description>Any relevant information regarding the client's agreement with us (ie: any notes about rolling over hrs, or if there is a strict end date etc.,)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Any relevant information regarding the client's agreement with us (ie: any notes about rolling over hrs, or if there is a strict end date etc.,). Will be mapped to Project and Maintenance TR Project RTs.</inlineHelpText>
+    <label>Important Information</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

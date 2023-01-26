@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is100Upfront__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If TRUE the Opp has been 100% upfront.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Used for Automation reg. Chatter post on Time Entry if there is no Open Billing Mapping on the Project. The ones that have 100% Upfront = TRUE are excluded (13.10.2022 -&gt; TPB01_TimeEntry)</inlineHelpText>
+    <label>Is 100% Upfront?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

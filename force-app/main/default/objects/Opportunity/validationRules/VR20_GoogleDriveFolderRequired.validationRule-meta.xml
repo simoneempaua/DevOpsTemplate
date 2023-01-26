@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR20_GoogleDriveFolderRequired</fullName>
+    <active>true</active>
+    <description>Link to the documents folder is required when the opportunity is in the stage 3. It is mandatory to store the documents in a place that is easily accessible to other contributors.</description>
+    <errorConditionFormula>AND( 
+$User.IsBypassVR__c = false, 
+ISBLANK(GoogleDriveFolder__c),
+ISCHANGED(StageName),
+OR( 
+ISPICKVAL( StageName , '3 - Cost Analysis'), 
+ISPICKVAL( StageName , '4 - Proposal/Price Quote'), 
+ISPICKVAL( StageName , '5 - Negotiation/Review'),
+ISPICKVAL( StageName , 'Closed Won')
+) 
+)</errorConditionFormula>
+    <errorMessage>Please provide the URL to the documents folder of this opportunity [VR20].</errorMessage>
+</ValidationRule>

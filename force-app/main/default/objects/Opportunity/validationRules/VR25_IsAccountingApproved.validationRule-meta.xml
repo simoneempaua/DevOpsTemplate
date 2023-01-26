@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR25_IsAccountingApproved</fullName>
+    <active>true</active>
+    <description>This opp needs to be approved by finance before closing this Opp.</description>
+    <errorConditionFormula>AND(
+IsAccountingApproved__c = False,
+$User.IsBypassVR__c = False, 
+ CloseDate &gt; DATE(2020,12,03) ,
+Account.CountWonOpportunitiesAuto__c &lt; 1,
+IsWon
+)</errorConditionFormula>
+    <errorMessage>This Opp needs to be approved by Finance before closing it [VR25]</errorMessage>
+</ValidationRule>

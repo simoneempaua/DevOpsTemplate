@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR09_SalesforceAELeadSourceSalesforce</fullName>
+    <active>true</active>
+    <description>Salesforce AE must be filled in if Salesforce is selected as the lead source</description>
+    <errorConditionFormula>$User.IsBypassVR__c = false &amp;&amp;
+ISPICKVAL(LeadSource, "Salesforce") &amp;&amp; 
+ISBLANK(Salesforce_AE__c) &amp;&amp;
+ISCHANGED(LeadSource)</errorConditionFormula>
+    <errorDisplayField>Salesforce_AE__c</errorDisplayField>
+    <errorMessage>Please ensure a Salesforce AE is selected [VR09].</errorMessage>
+</ValidationRule>
