@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PaymentTerms__c</fullName>
+    <description>Used to map against Billing.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Period Allowed for payment in Calendar Days. If you leave this blank, the default value of 14 will be pulled from the Account.</inlineHelpText>
+    <label>Payment Terms</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

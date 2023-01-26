@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR27_SupportBlock</fullName>
+    <active>true</active>
+    <description>For Support Blocks, you can only insert 1 Upfront Milestone [VR27].</description>
+    <errorConditionFormula>$User.IsBypassVR__c = FALSE
+&amp;&amp;
+CountMilestonesAuto__c &gt; 1
+&amp;&amp;
+ISPICKVAL(ProjectType__c ,'Service Block')</errorConditionFormula>
+    <errorMessage>For Support Blocks, you can only insert 1 Upfront Milestone [VR27].</errorMessage>
+</ValidationRule>

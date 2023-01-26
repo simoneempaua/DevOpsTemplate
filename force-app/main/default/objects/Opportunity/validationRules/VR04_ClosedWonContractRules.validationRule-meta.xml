@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR04_ClosedWonContractRules</fullName>
+    <active>true</active>
+    <description>When Closing an Opportunity you need to fill in: EMPAUA Entity, Project Type, Project Start / End Date (Make sure the dates are in the future), Milestones are were created, Circle. [VR04]</description>
+    <errorConditionFormula>$User.IsBypassVR__c = false &amp;&amp;
+ISPICKVAL(StageName, 'Closed Won') &amp;&amp;
+ISCHANGED(StageName) &amp;&amp;
+OR(
+ISBLANK(DeliveringEntityRef__c),
+ISBLANK( TEXT(ProjectType__c) ),
+ISBLANK( ProjectEndDateTrig__c ),
+ISBLANK( ProjectStartDateTrig__c ),
+ISBLANK(CircleRef__c),
+CountOpportunityProductsAuto__c &lt;1,
+ISNULL(CountOpportunityProductsAuto__c),
+CountMilestonesAuto__c &lt;1,
+ISNULL(CountMilestonesAuto__c),
+ProjectStartDateTrig__c &lt; TODAY(),
+ProjectEndDateTrig__c &lt; ProjectStartDateTrig__c
+)</errorConditionFormula>
+    <errorMessage>When Closing an Opportunity you need to fill in: 
+EMPAUA Entity, 
+Project Start / End Date (Make sure the dates are in the future), 
+Milestones are are created, Products are created, Circle. [VR04]</errorMessage>
+</ValidationRule>

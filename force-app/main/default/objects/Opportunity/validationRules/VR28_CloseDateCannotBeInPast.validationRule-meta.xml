@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR28_CloseDateCannotBeInPast</fullName>
+    <active>true</active>
+    <description>Close Date cannot be in past, if stage is not closed.</description>
+    <errorConditionFormula>AND(
+!$User.IsBypassVR__c,
+IsClosed = FALSE,
+CloseDate &lt; TODAY(),
+OR(
+ ISCHANGED(IsClosed), 
+ ISCHANGED(StageName))
+)</errorConditionFormula>
+    <errorMessage>Close Date cannot be in past, if stage is not closed. [VR28]</errorMessage>
+</ValidationRule>

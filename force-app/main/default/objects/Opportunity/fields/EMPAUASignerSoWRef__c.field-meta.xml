@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EMPAUASignerSoWRef__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This field defines the default EMPAUA user that signs Docusign contracts sent out from this Opportunity. Filled by Process Builder. ID of this lookup is referenced here: DeliveringEntityContractSignerAuto__c</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field defines the default EMPAUA user that signs Docusign contracts sent out from this Opportunity.</inlineHelpText>
+    <label>EMPAUA Signer SoW</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Opportunities</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

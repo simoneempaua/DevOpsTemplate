@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR29_OppNameLength</fullName>
+    <active>true</active>
+    <description>The Opportunity Name cannot be longer than 80 Characters as the max length for name for the resulting Task Ray Project is 80 characters. Please adjust [VR29].</description>
+    <errorConditionFormula>$User.IsBypassVR__c = FALSE &amp;&amp;
+LEN(Name) &gt; 80 &amp;&amp;
+IsClosed = FALSE</errorConditionFormula>
+    <errorMessage>The Opportunity Name cannot be longer than 80 Characters as the max length for name for the resulting Task Ray Project is 80 characters. Please adjust [VR29].</errorMessage>
+</ValidationRule>

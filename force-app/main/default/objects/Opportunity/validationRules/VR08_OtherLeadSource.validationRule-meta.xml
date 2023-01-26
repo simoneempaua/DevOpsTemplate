@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR08_OtherLeadSource</fullName>
+    <active>true</active>
+    <description>Ensure if Other is selected as Lead source, the detail is filled in</description>
+    <errorConditionFormula>$User.IsBypassVR__c = false
+
+&amp;&amp;
+
+ISPICKVAL(LeadSource, "Other") 
+
+&amp;&amp; 
+
+ISBLANK(LeadSourceAdditionalInfo__c)
+
+&amp;&amp; 
+
+Not( RecordTypeId = "01208000000BLsLAAW")</errorConditionFormula>
+    <errorDisplayField>LeadSourceAdditionalInfo__c</errorDisplayField>
+    <errorMessage>Please ensure Lead Source Detail is filled in [VR08].</errorMessage>
+</ValidationRule>

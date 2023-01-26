@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InvoicingAtPick__c</fullName>
+    <description>Will define in MILESTONES_APEX how the invoices will be inserted reg. Invoice Date. User enters value on LWC INSERT_MILESTONES_LWC for ProjectType__c = 'Time &amp; Materials', 'Managed Services' or 'Maintenance'. 
+Start of Project = Milestone Date is ProjectStartDateTrig__c - 10. 
+Beginning of Month = Milestones Dates are the 2. of each month
+Mid-Month = Milestones Dates are on the 16th of each month.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please select when the invoicing should happen. Must be filled for project type "Time &amp; Materials", "Managed Services" and "Maintenance". "Beginning of Month" means the previous month (service period) will be invoiced at the start of the following month.</inlineHelpText>
+    <label>Invoicing At</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Start of Project (Kick-Off)</fullName>
+                <default>false</default>
+                <label>Start of Project (Kick-Off)</label>
+            </value>
+            <value>
+                <fullName>Beginning of Month</fullName>
+                <default>false</default>
+                <label>Beginning of Month</label>
+            </value>
+            <value>
+                <fullName>Mid-Month</fullName>
+                <default>false</default>
+                <label>Mid-Month</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

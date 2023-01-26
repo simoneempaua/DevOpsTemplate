@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ReceivedAmountLastQuarterTrig__c</fullName>
+    <description>Gets updated via a scheduled flow (daily, SF08_UpdateOpportunity) to get the paid amount from the Billing Cash Receipts that have been paid last quarter. Needed for Commission Payout.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Field that can be used to pay out Commission to Opportunity Owner.</inlineHelpText>
+    <label>Received Amount Last Quarter</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

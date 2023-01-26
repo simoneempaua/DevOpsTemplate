@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR02_TaxGroupCheck</fullName>
+    <active>true</active>
+    <description>The Tax Group on the Account is not from the Ledger of the Delivering Entity. Please talk to Finance [VR02].</description>
+    <errorConditionFormula>$User.IsBypassWF__c = False
+&amp;&amp;
+(DeliveringEntityRef__r.LedgerRef__c &lt;&gt; Account.TaxGroupRef__r.LedgerRef__c)
+&amp;&amp;
+ISCHANGED(StageName)
+&amp;&amp;
+ISPICKVAL(StageName, 'Closed Won')</errorConditionFormula>
+    <errorMessage>The Tax Group on the Account is not from the Ledger of the Delivering Entity. Please talk to Finance [VR02].</errorMessage>
+</ValidationRule>

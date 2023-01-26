@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AccountingResponsibleRef__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>User from Finance who is reviewing the finance related information entered on the Opportunity.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>User from Finance who is reviewing the finance related information entered on the Opportunity.</inlineHelpText>
+    <label>Accounting Responsible</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>OpportunitiesAccounting</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

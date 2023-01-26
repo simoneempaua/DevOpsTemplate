@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Engagement_Approved__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field is automatically checked or unchecked based on the status of a related engagement.</description>
+    <externalId>false</externalId>
+    <label>Engagement Approved</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

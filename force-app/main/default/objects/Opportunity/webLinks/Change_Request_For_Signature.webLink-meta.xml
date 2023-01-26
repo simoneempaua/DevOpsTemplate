@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Change_Request_For_Signature</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Change Request For Signature</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>/apex/APXTConga4__Conga_Composer?SolMgr=1
+&amp;serverUrl={!API.Partner_Server_URL_370}
+&amp;Id={!Opportunity.Change_RequestId__c}
+&amp;QueryId=[CRQ]0Q_006EAC828260
+
+&amp;TemplateId=0T_034EAC731140
+
+&amp;DefaultPDF=1
+&amp;SC0=1
+&amp;SC1=salesforcefile
+&amp;OFN={!Change_Request__c.ChangeRequestNumber__c}_{!Change_Request__c.ClientName__c}
+&amp;DocuSignVisible=1
+&amp;DocuSignR1ID={!Opportunity.EMPAUASignerSoWRefId__c}
+&amp;DocuSignR2ID={!Opportunity.CustomerSignerSoWIDAuto__c}
+&amp;&amp;DocuSignR2Role=Signer+2</url>
+</WebLink>

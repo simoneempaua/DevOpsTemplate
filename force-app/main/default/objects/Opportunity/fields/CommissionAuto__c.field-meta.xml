@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CommissionAuto__c</fullName>
+    <description>Used in a commission reports to show which amount to pay out (based on how much payment has been received in the last quarter).</description>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL(Type, "New Business"),   ReceivedAmountLastQuarterTrig__c * CommissionV02Auto__c, ReceivedAmountLastQuarterTrig__c* CommissionV02Auto__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Not on Page Layout, do not delete.</inlineHelpText>
+    <label>Commission Amount for Last Quarter</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

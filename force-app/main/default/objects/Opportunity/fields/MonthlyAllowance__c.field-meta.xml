@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MonthlyAllowance__c</fullName>
+    <description>MILESTONES_APEX will inserts Milestones with Monthly Allowance as Invoice Line Item Quantity, for Ongoing projects with ProjectType__c = 'Managed Service", ProjectEndDateTrig__c in the future and no open Invoice connected for the period.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please enter the monthly allowance that the customer can use for Managed Service. Will be the quantity of each Invoice that will be created.</inlineHelpText>
+    <label>Monthly Allowance</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

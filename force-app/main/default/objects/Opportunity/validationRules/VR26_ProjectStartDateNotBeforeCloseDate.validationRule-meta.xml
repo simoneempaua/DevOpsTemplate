@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR26_ProjectStartDateNotBeforeCloseDate</fullName>
+    <active>true</active>
+    <description>Project Start Date cannot be before the close date of the opportunity.</description>
+    <errorConditionFormula>AND(CloseDate &gt; ProjectStartDateTrig__c,
+ $User.IsBypassVR__c = FALSE,
+  NOT(ISPICKVAL(StageName, "Closed Lost") ),
+  NOT(ISPICKVAL(StageName, "Closed Won") )
+)</errorConditionFormula>
+    <errorMessage>Project Start Date cannot be before the close date of the opportunity [VR26]</errorMessage>
+</ValidationRule>

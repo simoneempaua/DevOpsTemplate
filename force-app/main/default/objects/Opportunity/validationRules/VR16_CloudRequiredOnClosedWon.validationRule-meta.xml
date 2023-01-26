@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR16_CloudRequiredOnClosedWon</fullName>
+    <active>true</active>
+    <description>Salesforce cloud is required on closed won</description>
+    <errorConditionFormula>$User.IsBypassVR__c = False &amp;&amp;
+ISBLANK(SalesforceClouds__c) &amp;&amp;
+ISCHANGED(StageName) &amp;&amp;
+ISPICKVAL(StageName, 'Closed Won')</errorConditionFormula>
+    <errorDisplayField>SalesforceClouds__c</errorDisplayField>
+    <errorMessage>Please provide the Salesforce Cloud(s) on Closed Won. [VR16]</errorMessage>
+</ValidationRule>

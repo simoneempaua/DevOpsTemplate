@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project</fullName>
+    <description>Sales process for projects.</description>
+    <isActive>true</isActive>
+    <values>
+        <fullName>1 - Discovery</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>2 - Workshop Closed</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>3 - Cost Analysis</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>4 - Proposal%2FPrice Quote</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>5 - Negotiation%2FReview</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed Lost</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed Won</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR15_EnforceInvoiceContact</fullName>
+    <active>true</active>
+    <description>Invoice contact on opportunity must be given, when closing an opportunity.</description>
+    <errorConditionFormula>$User.IsBypassWF__c = False &amp;&amp;
+Account.RecordType.Name = 'Business Account'
+&amp;&amp;
+ISBLANK( InvoiceContactRef__c )
+&amp;&amp;
+ISCHANGED(StageName) 
+&amp;&amp;
+ISPICKVAL(StageName, 'Closed Won')</errorConditionFormula>
+    <errorMessage>You need to select an Invoice Contact on the Opportunity before you can close this Opportunity as won. [VR15]</errorMessage>
+</ValidationRule>

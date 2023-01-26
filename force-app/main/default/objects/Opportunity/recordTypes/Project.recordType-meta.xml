@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project</fullName>
+    <active>true</active>
+    <businessProcess>Project</businessProcess>
+    <description>Fixed-Price and Time &amp; Materials Projects.</description>
+    <label>1 Project</label>
+    <picklistValues>
+        <picklist>Authority__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CompetitorName__c</picklist>
+        <values>
+            <fullName>Aborda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accenture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Axpe Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Capgemini</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ceterna</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CloudShift</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cloudity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cloudsocius</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deloitte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Die-interaktiven</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Factory 42</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indra - Insight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kantox</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LeadClic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pracedo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S4G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TicMind</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vass</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Xenogenix</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>cDecisions</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DeliveryInstallationStatus__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yet to begin</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ease_of_handing_the_client_over__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ForecastCategoryName</picklist>
+        <values>
+            <fullName>Best Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipeline</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>InvoicingAtPick__c</picklist>
+        <values>
+            <fullName>Beginning of Month</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mid-Month</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Start of Project %28Kick-Off%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Customer Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMPAUA Hosted Events</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Events</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google - Organic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LinkedIn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing Generated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid For</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFDC-IN%7CLeadly %7C Manage all your Lead automations with one app</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Generated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce Cloud Futura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce Official Events</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third Party Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Twitter</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSourceDetails__c</picklist>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMPAUA Hosted Events</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Events</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid For</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce Official Events</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third Party Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Twitter</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LostReason__c</picklist>
+        <values>
+            <fullName>Competition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost Momentum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Feature</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Authority</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Money%2FPrice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Need</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Urgency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor Qualification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce Price</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lost_to_Competitor_Reason__c</picklist>
+        <values>
+            <fullName>Availability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reputation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Specific Expertise</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>New_Joiner_Project_Status__c</picklist>
+        <values>
+            <fullName>New Joiner Placed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Potential%2FNeeds Matching</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NrOfPayments__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PaymentSplit__c</picklist>
+        <values>
+            <fullName>100%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>25%25 %2F 25%25 %2F 50%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>25%25 %2F 50%25 %2F 25%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>25%25 %2F 75%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50%25 %2F 25%25 %2F 25%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50%25 %2F 50%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>75%25 %2F 25%25</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PaymentType__c</picklist>
+        <values>
+            <fullName>After Delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upfront</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Previous_Successful_IT_Project_Experienc__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ProjectType__c</picklist>
+        <values>
+            <fullName>Time %26 Materials</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Turnkey Project</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ResourcingStatusPick__c</picklist>
+        <values>
+            <fullName>Resourced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To Re-Staff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To be Resourced</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SalesforceClouds__c</picklist>
+        <values>
+            <fullName>CPQ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education Cloud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Einstein Analytics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Experience Cloud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Field Service Lightning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial Services Cloud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Force%2Ecom Platform</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government Cloud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health Cloud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing Cloud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mulesoft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pardot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Cloud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce%2Eorg Nonprofit Cloud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Cloud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tableau</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SoWLanguage__c</picklist>
+        <values>
+            <fullName>English</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>German</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Strong_reason_for_project__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Suitable_Budget__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Timing__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Existing Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Business</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>WebsiteDetailSourcePick__c</picklist>
+        <values>
+            <fullName>Accounting Seed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Book a Demo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Book a Workshop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cheat Sheet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contact Page</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Transformation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Event Landingpage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health Check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Managed Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pardot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Whitepaper</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>WorkshopTimePick__c</picklist>
+        <values>
+            <fullName>2 weeks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 weeks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 weeks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>after 4 weeks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>asap</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

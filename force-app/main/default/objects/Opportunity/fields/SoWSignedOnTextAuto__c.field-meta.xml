@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SoWSignedOnTextAuto__c</fullName>
+    <description>Docusign Write Back Conversion Field.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+SoWSignedOnText__c = "",NULL,
+DATE(
+VALUE(RIGHT(SoWSignedOnText__c,4)),
+VALUE(MID( SoWSignedOnText__c ,4,2)),
+VALUE(LEFT(SoWSignedOnText__c, 2))
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Docusign Write Back Conversion Field.</inlineHelpText>
+    <label>SoW Signed On Text Auto</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

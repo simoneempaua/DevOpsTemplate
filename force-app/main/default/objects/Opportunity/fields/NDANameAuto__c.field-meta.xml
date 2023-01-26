@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NDANameAuto__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(SoWLanguage__c ,
+'English',"Mutual NDA between "&amp;Account.Name&amp;" EMPAUA",
+'German',"Geheimhaltungsvereinbarung zwischen "&amp;Account.Name&amp;" EMPAUA",
+"Mutual NDA between "&amp;Account.Name&amp;" EMPAUA"
+)</formula>
+    <inlineHelpText>Field for automatically naming the NDA in Conga / Docusign.</inlineHelpText>
+    <label>NDA Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

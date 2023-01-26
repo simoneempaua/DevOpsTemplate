@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR03_ApproveEngagementBeforeClosingOppt</fullName>
+    <active>true</active>
+    <description>Engagement must be approved before closing the opportunity.</description>
+    <errorConditionFormula>$User.IsBypassVR__c = false &amp;&amp;
+NOT(Engagement_Approved__c) &amp;&amp; 
+IsWon &amp;&amp;
+ISCHANGED(StageName)</errorConditionFormula>
+    <errorDisplayField>StageName</errorDisplayField>
+    <errorMessage>Please make sure your engagement is approved before closing the opportunity [VR03].</errorMessage>
+</ValidationRule>

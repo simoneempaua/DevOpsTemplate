@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EMPAUAValidatorSoWRef__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Field for the SoW Validator user that is referenced on the SoW. Used in Conga.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Field for the SoW Validator user that is referenced on the SoW. Used in Conga.</inlineHelpText>
+    <label>EMPAUA Validator SoW</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Opportunities3</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

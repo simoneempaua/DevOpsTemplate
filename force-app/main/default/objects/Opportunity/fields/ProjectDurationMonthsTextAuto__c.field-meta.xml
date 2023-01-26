@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProjectDurationMonthsTextAuto__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(SoWLanguage__c,'German'),
+CASE( ProjectDurationMonthAuto__c ,
+1,'einem (1) Monat',
+2,'zwei (2) Monaten',
+3,'drei (3) Monaten',
+4,'vier (4) Monaten',
+5,'fünf (5) Monaten',
+6,'sechs (6) Monaten',
+7,'sieben (7) Monaten',
+8,'acht (8) Monaten',
+9,'neun (9) Monaten',
+10,'zehn (10) Monaten',
+11,'elf (11) Monaten',
+12,'zwölf (12) Monaten',
+''),
+CASE( ProjectDurationMonthAuto__c ,
+1,'one (1) month',
+2,'two (2) months',
+3,'three (3) months',
+4,'four (4) months',
+5,'five (5) months',
+6,'six (6) months',
+7,'seven (7) months',
+8,'eight (8) months',
+9,'nine (9) months',
+10,'ten (10) months',
+11,'eleven (11) months',
+12,'twelve (12) months',
+''))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Project Duration Month(s) Text</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
